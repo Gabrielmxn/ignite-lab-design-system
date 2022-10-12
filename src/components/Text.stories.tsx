@@ -11,6 +11,7 @@ export default {
   argTypes: {
     size: {
       control: {
+        options: ['sm', 'md', 'lg'],
         type: 'inline-radio'
       }
     }
@@ -35,7 +36,7 @@ export const CustomComponent: StoryObj<TextProps> = {
   args: {
     asChild: true,
     children: (
-      <p>Testando</p>
+      <p>Text with p</p>
     )
   },
   argTypes: {
