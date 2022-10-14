@@ -10,10 +10,10 @@ export default {
   decorators: [
     (Story) => {
       return(
-        <div className="flex items-center gap-2">
+        <label htmlFor="check" aria-labelledby="check" className="flex items-center gap-2">
           {Story()}
-          <Text size="sm">Lembrar-me de mim por 30 dias</Text>
-        </div>
+          <Text size="sm">Dias</Text>
+        </label>
       )
     }
   ]
